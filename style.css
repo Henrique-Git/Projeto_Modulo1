@@ -1,0 +1,326 @@
+html{
+    filter: grayscale(50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: url(images/new.gif);
+    background-size: cover;
+    color: rgb(56, 56, 56);
+}
+
+.principal{
+    border: 2px solid white;
+    border: none;
+    border-radius: 50px;
+    height: 55vh;
+    padding: 3% 0 5% 0;
+    margin: 2% 15%;
+    text-align: center;
+    filter: drop-shadow(16px 16px 20px rgb(100, 47, 11));
+}
+
+.principal > h2{
+    background: white;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+    color:rgb(56, 56, 56);
+    cursor: default;
+}
+
+.personagens{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+
+}
+
+.options{
+    border: 2px solid rgb(56, 56, 56);
+    background: white;
+    border-radius: 30px;
+    border: none;
+    width: 23%;
+    cursor: pointer;
+}
+
+.options > a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+}
+
+.options > img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+}
+
+.options > a > figcaption{
+    padding: 9px;
+    font-weight: bolder;
+}
+
+.options:hover{
+    border: 3px groove rgb(163, 82, 5);
+}
+
+.presentation{
+    display: none;
+    padding: 10px;
+    border-top: 3px dashed rgb(56, 56, 56);
+    font-weight: bold;
+}
+
+.options:hover .presentation{
+    display: block;
+}
+
+.advance{
+    margin: 2% 0;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+/*Páginas específicas de cada personagem*/
+
+.principal_skills{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(100, 47, 11);
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    margin: 2% 12% 1% 12%;
+    line-height: 5em;
+    background: linear-gradient(to right,rgb(207, 152, 90), white);
+    text-shadow: rgb(100, 47, 11) 10px 10px 8px;
+}
+
+/* Enma */
+
+.habilidades_enma{
+    width: 60%;
+}
+
+.habilidades_enma > li{
+    border-bottom: 2px solid rgb(56, 56, 56);
+}
+
+.habilidades_enma > li::after{
+    margin: 2%;
+}
+
+.habilidades_enma > .atributo1::after{
+    content: "✯✯";
+    font-weight: 900;
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_enma > .atributo2::after{
+    content: "✯✯✯✯";
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_enma > .atributo3::after{
+    content: "✯✯✯";
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_enma > .atributo4::after{
+    content: "✯✯✯✯✯✯✯✯✯✯";
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_enma > .especial::after{
+    content: "RACIOCÍNIO LÓGICO";
+    color: rgb(255, 42, 42);
+}
+
+/* Jonathan */
+
+.habilidades_jonathan{
+    width: 60%;
+}
+
+.habilidades_jonathan > li{
+    border-bottom: 2px solid rgb(56, 56, 56);
+}
+
+.habilidades_jonathan > li::after{
+    margin: 2%;
+}
+
+.habilidades_jonathan > .atributo1::after{
+    content: "✯✯✯✯✯✯✯✯✯✯";
+    font-weight: 900;
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_jonathan > .atributo2::after{
+    content: "✯✯✯✯";
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_jonathan > .atributo3::after{
+    content: "✯✯✯✯✯";
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_jonathan > .atributo4::after{
+    content: "✯✯";
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_jonathan > .especial::after{
+    content: "CAPACIDADE ADAPTATIVA";
+    color: rgb(255, 42, 42);
+}
+
+/* Joseph */
+
+.habilidades_joseph{
+    width: 60%;
+}
+
+.habilidades_joseph > li{
+    border-bottom: 2px solid rgb(56, 56, 56);
+}
+
+.habilidades_joseph > li::after{
+    margin: 2%;
+}
+
+.habilidades_joseph > .atributo1::after{
+    content: "✯✯✯✯✯";
+    font-weight: 900;
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_joseph > .atributo2::after{
+    content: "✯✯✯✯✯✯✯✯✯✯";
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_joseph > .atributo3::after{
+    content: "✯✯✯";
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_joseph > .atributo4::after{
+    content: "✯✯✯";
+    font-size: 1.5em;
+    color: rgb(255, 251, 42);
+}
+
+.habilidades_joseph > .especial::after{
+    content: "VELOCIDADE SÔNICA";
+    color: rgb(255, 42, 42);
+}
+
+.principal_skills > img{
+    width: 60%;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 35%;
+    
+}
+
+.botoes > a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+.botoes .botao1{
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    border: none;
+    padding: 10px;
+    margin: 1.8% 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(177, 125, 57);
+}
+
+.box_escolhas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    border: 2px solid rgb(100, 47, 11);
+    border-radius: 30px;
+    color: rgb(56, 56, 56);
+    font-weight: bold;
+    margin: 5% 15%;
+    line-height: 2em;
+    background: linear-gradient(to right,rgb(207, 152, 90), rgb(231, 214, 197));
+    padding: 30px;
+    text-shadow: rgb(100, 47, 11) 10px 10px 15px;
+}
+
+.box_escolhas > h3{
+    text-align: center;
+    text-shadow: rgb(100, 47, 11) 10px 10px 20px;
+    font-size: 1.5em;
+}
+
+.box_escolhas > a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.botao_resp{
+    align-self: center;
+    background: rgb(151, 72, 20);
+    border-radius: 10px;
+    padding: 7px;
+    width: 30%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.game_over{
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: rgb(100, 47, 11) 10px 10px 20px;
+}
+
+strong{
+    font-size: larger;
+}
+
+.continue{
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: rgb(100, 47, 11) 10px 10px 20px;
+}
