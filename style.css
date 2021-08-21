@@ -9,6 +9,8 @@ body{
     color: rgb(56, 56, 56);
 }
 
+/*Página de seleção de personagens*/
+
 .principal{
     border: 2px solid white;
     border: none;
@@ -24,7 +26,7 @@ body{
     background: white;
     padding: 5px;
     border-radius: 50px;
-    font-size: 30px;
+    font-size: 1.8em;
     font-weight: bolder;
     color:rgb(56, 56, 56);
     cursor: default;
@@ -53,7 +55,7 @@ body{
     color: rgb(56, 56, 56);
 }
 
-.options > img{
+.options > a > img{
     max-width: 100%;
     max-height: 100%;
     border-radius: 30px;
@@ -79,16 +81,41 @@ body{
     display: block;
 }
 
-.advance{
-    margin: 2% 0;
-    border: none;
-    padding: 10px;
-    border-radius: 50px;
-    width: 100%;
-    font-size: 15px;
-    font-weight: bolder;
-    cursor: pointer;
-}
+/*Adequação da seleção de personagens para dispositivos móveis*/
+
+@media (max-width: 900px){
+
+    body{
+        background-size: cover;
+    }
+    
+    .principal > h2{
+        background: white;
+        padding: 5px;
+        border-radius: 50px;
+        font-size: 1.5em;
+        font-weight: bolder;
+        color:rgb(56, 56, 56);
+        cursor: default;
+    }
+    
+    .personagens{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8%;
+    }
+
+    .options{
+        border: 2px solid rgb(56, 56, 56);
+        background: white;
+        border-radius: 30px;
+        border: none;
+        width: 50%;
+        cursor: pointer;
+    }
+} 
 
 
 /*Páginas específicas de cada personagem*/
@@ -106,10 +133,35 @@ body{
     text-shadow: rgb(100, 47, 11) 10px 10px 8px;
 }
 
-/* Enma */
+/*Adequação das páginas de habilidades para dispositivos móveis*/
+
+@media (max-width: 900px){
+    .principal_skills{
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-items: center;
+        border: 2px solid rgb(100, 47, 11);
+        border-radius: 30px;
+        color: black;
+        font-weight: bold;
+        margin: 1% 1% 1% 1%;
+        text-align: justify;
+        line-height: 5em;
+        background: linear-gradient(to top ,rgb(207, 152, 90), white);
+        text-shadow: rgb(100, 47, 11) 10px 10px 8px;
+    }
+
+    .principal_skills li{
+        list-style: none;
+        margin-right: 20%;
+    }
+} 
+
+/*Habilidades da Enma*/
 
 .habilidades_enma{
-    width: 60%;
+    width: 70%;
+    font-size: 1em;
 }
 
 .habilidades_enma > li{
@@ -122,26 +174,21 @@ body{
 
 .habilidades_enma > .atributo1::after{
     content: "✯✯";
-    font-weight: 900;
-    font-size: 1.5em;
     color: rgb(255, 251, 42);
 }
 
 .habilidades_enma > .atributo2::after{
-    content: "✯✯✯✯";
-    font-size: 1.5em;
+    content: "✯✯✯✯";    
     color: rgb(255, 251, 42);
 }
 
 .habilidades_enma > .atributo3::after{
     content: "✯✯✯";
-    font-size: 1.5em;
     color: rgb(255, 251, 42);
 }
 
 .habilidades_enma > .atributo4::after{
     content: "✯✯✯✯✯✯✯✯✯✯";
-    font-size: 1.5em;
     color: rgb(255, 251, 42);
 }
 
@@ -150,10 +197,11 @@ body{
     color: rgb(255, 42, 42);
 }
 
-/* Jonathan */
+/*Habilidades do Jonathan*/
 
 .habilidades_jonathan{
-    width: 60%;
+    width: 70%;
+    font-size: 1em;
 }
 
 .habilidades_jonathan > li{
@@ -166,26 +214,21 @@ body{
 
 .habilidades_jonathan > .atributo1::after{
     content: "✯✯✯✯✯✯✯✯✯✯";
-    font-weight: 900;
-    font-size: 1.5em;
     color: rgb(255, 251, 42);
 }
 
 .habilidades_jonathan > .atributo2::after{
     content: "✯✯✯✯";
-    font-size: 1.5em;
     color: rgb(255, 251, 42);
 }
 
 .habilidades_jonathan > .atributo3::after{
     content: "✯✯✯✯✯";
-    font-size: 1.5em;
     color: rgb(255, 251, 42);
 }
 
 .habilidades_jonathan > .atributo4::after{
     content: "✯✯";
-    font-size: 1.5em;
     color: rgb(255, 251, 42);
 }
 
@@ -194,10 +237,11 @@ body{
     color: rgb(255, 42, 42);
 }
 
-/* Joseph */
+/*Habilidades do Joseph*/
 
 .habilidades_joseph{
-    width: 60%;
+    width: 70%;
+    font-size: 1em;
 }
 
 .habilidades_joseph > li{
@@ -210,26 +254,21 @@ body{
 
 .habilidades_joseph > .atributo1::after{
     content: "✯✯✯✯✯";
-    font-weight: 900;
-    font-size: 1.5em;
     color: rgb(255, 251, 42);
 }
 
 .habilidades_joseph > .atributo2::after{
     content: "✯✯✯✯✯✯✯✯✯✯";
-    font-size: 1.5em;
     color: rgb(255, 251, 42);
 }
 
 .habilidades_joseph > .atributo3::after{
     content: "✯✯✯";
-    font-size: 1.5em;
     color: rgb(255, 251, 42);
 }
 
 .habilidades_joseph > .atributo4::after{
     content: "✯✯✯";
-    font-size: 1.5em;
     color: rgb(255, 251, 42);
 }
 
@@ -269,6 +308,8 @@ body{
     width: 100%;
     background-color: rgb(177, 125, 57);
 }
+
+/*Páginas de escolhas*/
 
 .box_escolhas{
     display: flex;
@@ -324,3 +365,41 @@ strong{
     font-size: 2.5em;
     text-shadow: rgb(100, 47, 11) 10px 10px 20px;
 }
+
+/*Adequação das caixas de escolhas para dispositivos móveis*/
+
+@media (max-width: 900px) {
+    .box_escolhas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        border: 2px solid rgb(100, 47, 11);
+        border-radius: 30px;
+        color: rgb(56, 56, 56);
+        font-weight: bold;
+        margin: 5% 2%;
+        line-height: 2em;
+        background: linear-gradient(to right,rgb(207, 152, 90), rgb(231, 214, 197));
+        padding: 30px;
+        text-shadow: rgb(100, 47, 11) 10px 10px 15px;
+    }
+
+    .botao_resp{
+        align-self: center;
+        background: rgb(151, 72, 20);
+        border-radius: 10px;
+        padding: 7px;
+        width: 50%;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .game_over{
+        text-align: center;
+        font-size: 2em;
+        text-shadow: rgb(100, 47, 11) 10px 10px 20px;
+    }
+}
+
